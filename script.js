@@ -7,13 +7,17 @@ document.addEventListener('DOMContentLoaded',(Event)=>
     burger.addEventListener('click', function showHide()
     {
         if(ulpt.style.display == 'none')
-            ulpt.style.display = 'block'
-            // if (@media > (max-width: 768px))
-            // {
-            //     ulpt.style.display == 'none'
-            // }
-        
+        {
+            ulpt.style.display = 'flex'
+        }
         else
+        {
             ulpt.style.display = 'none'
+        }
+    })
+    ulpt.addEventListener('click', function hide()
+    {
+        ulpt.style.display= 'none'
+
     })
 })
